@@ -22,7 +22,6 @@ app.whenReady().then(() => {
   mainWindow.loadFile("index.html");
 });
 
-// Função para criar uma nova janela
 function criarNovaJanela(x, y) {
   const novaJanela = new BrowserWindow({
     x: x,
@@ -37,7 +36,7 @@ function criarNovaJanela(x, y) {
     },
   });
 
-  novaJanela.loadFile("index.html"); // Carrega o mesmo arquivo HTML ou outro, se preferir
+  novaJanela.loadFile("index.html");
 }
 
 app.on("window-all-closed", () => {
