@@ -1,0 +1,22 @@
+{
+  "name": "adware",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",      
+    "pack": "electron-builder", 
+    "dist": "electron-builder --win" 
+  },
+  "build": {   
+    "productName": "Adware Test",  
+    "win": {
+      "target": "nsis"
+    }
+  },
+  "license": "ISC",
+  "description": "Adware Test",
+  "devDependencies": {
+    "electron": "^35.0.1",
+    "electron-builder": "^25.1.8"
+  }
+}
